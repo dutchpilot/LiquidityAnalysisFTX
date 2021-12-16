@@ -9,8 +9,7 @@ count = 0
 for instrument in json_data['result']:
     name = instrument['name']
     if (instrument['type'] == 'spot') and (not "EDGE" in name)\
-    and (not "BULL" in name) and (not "BEAR" in name)and (not "HALF" in name) and (not "/BTC" in name)\
-    and (not "/TRYB" in name) and (not "/EUR" in name) and (not "/BRZ" in name) and (not "/DOGE" in name)\
+    and (not "BULL" in name) and (not "BEAR" in name)and (not "HALF" in name)\
     and ("/USD" in name):
         count += 1
 
